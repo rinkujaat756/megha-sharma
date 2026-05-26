@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title> ITI COPA Portfolio</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+/* RESET */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:'Poppins', sans-serif;
+    background:#0f172a;
+    color:#e5e7eb;
+}
+
+/* NAVBAR */
+nav{
+    position:fixed;
+    top:0;
+    width:100%;
+    background:#111827;
+    display:flex;
+    justify-content:center;
+    padding:15px;
+    z-index:1000;
+    box-shadow:0 5px 20px rgba(0,0,0,0.3);
+}
+
+nav a{
+    color:#e5e7eb;
+    text-decoration:none;
+    margin:0 15px;
+    font-size:17px;
+    transition:0.3s;
+}
+
+nav a:hover{
+    color:#38bdf8;
+}
+
+/* HEADER */
+header{
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    background:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),
+    url('https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=1200') center/cover;
+}
+
+.hero img{
+    width:170px;
+    height:170px;
+    border-radius:50%;
+    border:4px solid #38bdf8;
+    margin-bottom:20px;
+}
+
+.hero h1{
+    font-size:50px;
+}
+
+.hero p{
+    font-size:20px;
+    margin:10px 0 20px;
+}
+
+.hero button{
+    padding:12px 25px;
+    border:none;
+    border-radius:30px;
+    background:#38bdf8;
+    color:black;
+    font-size:16px;
+    cursor:pointer;
+}
+
+/* SECTIONS */
+section{
+    padding:90px 10%;
+}
+
+.title{
+    text-align:center;
+    font-size:36px;
+    margin-bottom:40px;
+    color:#38bdf8;
+}
+
+/* ABOUT */
+.about{
+    max-width:800px;
+    margin:auto;
+    line-height:1.8;
+    font-size:18px;
+    text-align:center;
+}
+
+/* SKILLS */
+.skills{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:20px;
+}
+
+.skill-box{
+    background:#1e293b;
+    padding:25px;
+    border-radius:12px;
+    text-align:center;
+    transition:0.3s;
+}
+
+.skill-box:hover{
+    background:#38bdf8;
+    color:black;
+    transform:translateY(-8px);
+}
+
+/* PROJECTS */
+.projects{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+    gap:20px;
+}
+
+.project-card{
+    background:#1e293b;
+    border-radius:12px;
+    overflow:hidden;
+}
+
+.project-card img{
+    width:100%;
+    height:200px;
+    object-fit:cover;
+}
+
+.project-content{
+    padding:15px;
+}
+
+/* GALLERY */
+.gallery{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:15px;
+}
+
+.gallery img{
+    width:100%;
+    height:220px;
+    border-radius:10px;
+    object-fit:cover;
+}
+
+/* CONTACT */
+.contact-box{
+    max-width:600px;
+    margin:auto;
+    background:#1e293b;
+    padding:30px;
+    border-radius:12px;
+}
+
+input,textarea{
+    width:100%;
+    padding:12px;
+    margin:10px 0;
+    border:none;
+    border-radius:8px;
+}
+
+button{
+    background:#38bdf8;
+    border:none;
+    padding:12px 20px;
+    border-radius:8px;
+    cursor:pointer;
+}
+
+/* FOOTER */
+footer{
+    text-align:center;
+    padding:25px;
+    background:#111827;
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<!-- HEADER -->
+<header>
+    <div class="hero">
+        <img src="jkj.jpg" alt="photo">
+        <h1>ITI COPA TRADE WEBSITE</h1>
+        <p>ITI COPA Student | Web Developer</p>
+        <button onclick="document.getElementById('contact').scrollIntoView()">
+            Hire Me
+        </button>
+    </div>
+</header>
+
+<!-- ABOUT -->
+<section id="about">
+    <h2 class="title">About Me</h2>
+    <p class="about">
+        💻✨ COPA Trade
+
+COPA (Computer Operator and Programming Assistant) एक आधुनिक IT trade है जो students को computer और office technology की practical skills प्रदान करता है 💻।
+
+इस course में MS Office 📄, Internet 🌐, Basic Programming 👨‍💻, Database Management 💾 और Computer Operations ⌨️ जैसी महत्वपूर्ण skills पर focus किया जाता है।
+
+इस trade का उद्देश्य students को industry-ready बनाना है ताकि वे IT field में confidently काम कर सकें 🚀। यह course Data Entry Operator, Computer Operator, Office Assistant और IT Support जैसे career opportunities के लिए मजबूत base तैयार करता है 💼।
+
+COPA trade में practical learning पर ज्यादा ध्यान दिया जाता है, जिससे real-world skills develop होती हैं और future में better job opportunities मिलती हैं ✨।
+    </p>
+</section>
+<!-- SKILLS -->
+<section id="skills">
+    <h2 class="title">Skills</h2>
+
+    <div class="skills">
+
+        <div class="skill-box" onclick="showCode('html')">HTML</div>
+
+        <div class="skill-box" onclick="showCode('css')">CSS</div>
+
+        <div class="skill-box" onclick="showCode('js')">JavaScript</div>
+
+    </div>
+</section>
+
+<!-- POPUP BOX -->
+<div id="popup" style="display:none;position:fixed;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,0.8);justify-content:center;align-items:center;">
+    
+    <div style="background:#1e293b;padding:20px;width:80%;max-width:600px;border-radius:10px;position:relative;">
+        
+        <span onclick="closePopup()" style="position:absolute;right:10px;top:5px;font-size:25px;cursor:pointer;color:white;">&times;</span>
+        
+        <pre id="codeBox" style="color:#38bdf8;white-space:pre-wrap;"></pre>
+
+    </div>
+</div>
+
+<!-- JAVASCRIPT -->
+<script>
+
+function showCode(type){
+
+    let code = "";
+
+    // HTML Coding
+    if(type === "html"){
+        code = `<!DOCTYPE html>
+<html>
+<head>
+    <title>My Website</title>
+</head>
+<body>
+
+    <h1>Welcome To My Website</h1>
+    <p>This is HTML Coding Example</p>
+
+    <button>Click Me</button>
+
+</body>
+</html>`;
+    }
+
+    // CSS Coding
+    if(type === "css"){
+        code = `body{
+    background:#0f172a;
+    color:white;
+    font-family:Arial;
+    text-align:center;
+}
+
+h1{
+    color:skyblue;
+    margin-top:50px;
+}
+
+button{
+    background:skyblue;
+    border:none;
+    padding:10px 20px;
+    border-radius:8px;
+    cursor:pointer;
+}`;
+    }
+
+    // JavaScript Coding
+    if(type === "js"){
+        code = `function welcome(){
+
+    alert("Welcome To JavaScript");
+
+}
+
+document.querySelector("button")
+.addEventListener("click", welcome);`;
+    }
+
+    document.getElementById("codeBox").innerText = code;
+    document.getElementById("popup").style.display = "flex";
+}
+
+function closePopup(){
+    document.getElementById("popup").style.display = "none";
+}
+
+</script>
+
+<!-- PROJECTS -->
+<section id="projects">
+    <h2 class="title">Projects</h2>
+
+    <div class="projects">
+
+        <!-- Portfolio Website -->
+        <div class="project-card"
+             onclick="window.open('portfolio.html')"
+             style="cursor:pointer;">
+
+            <img src="share-card.jpg">
+
+            <div class="project-content">
+                <h3>Portfolio Website</h3>
+                <p>Personal responsive website using HTML & CSS</p>
+            </div>
+        </div>
+
+        <!-- Login Page -->
+        <div class="project-card"
+             onclick="window.open('login.html')"
+             style="cursor:pointer;">
+
+            <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c">
+
+            <div class="project-content">
+                <h3>Login Page</h3>
+                <p>Simple login form with HTML & CSS design</p>
+            </div>
+        </div>
+
+        <!-- Calculator -->
+        <div class="project-card"
+             onclick="window.open('calculator.html')"
+             style="cursor:pointer;">
+
+            <img src="images.jpg">
+
+            <div class="project-content">
+                <h3>Calculator</h3>
+                <p>Basic calculator using HTML, CSS & JavaScript</p>
+            </div>
+        </div>
+
+    </div>
+</section>
+<!-- GALLERY -->
+<section id="gallery">
+    <h2 class="title">Gallery</h2>
+    <div class="gallery">
+
+        <img src="iti.jpg" onclick="openImage(0)">
+        <img src="jp.jpg" onclick="openImage(1)">
+        <img src="lkj.jpg" onclick="openImage(2)">
+
+    </div>
+</section>
+<section id="contact">
+    <h2 class="title">Contact</h2>
+
+    <div class="contact-box">
+
+        <!-- Buttons -->
+        <div style="text-align:center; margin-bottom:20px;">
+            
+            <a href="tel:9876543210" style="margin:10px; padding:10px 15px; background:#38bdf8; color:black; text-decoration:none; border-radius:8px;">
+                📞 Call
+            </a>
+
+            <a href="https://wa.me/ 7976001201?text=Hello%20I%20want%20to%20contact%20you" 
+               style="margin:10px; padding:10px 15px; background:#25D366; color:white; text-decoration:none; border-radius:8px;">
+                💬 WhatsApp
+            </a>
+
+            <a href="muskanmansuri0047@gmail.com" 
+               style="margin:10px; padding:10px 15px; background:#f87171; color:white; text-decoration:none; border-radius:8px;">
+                📧 Email
+            </a>
+
+        </div>
+
+        <!-- Form -->
+        <form onsubmit="sendMail(event)">
+
+            <input type="text" id="name" placeholder="user name" required>
+
+            <input type="email" id="email" placeholder="reciver email" required>
+
+            <input type="tel" id="phone" placeholder="reciver number" required>
+
+            <textarea id="message" rows="5" placeholder="Your Message" required></textarea>
+
+            <button type="submit">Send Message</button>
+
+        </form>
+
+    </div>
+</section>
+<!-- FOOTER -->
+<footer>
+    © 2026 My Portfolio | Made with ❤️
+</footer>
+
+</body>
+</html> 
